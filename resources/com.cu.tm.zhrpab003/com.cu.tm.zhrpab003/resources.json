@@ -1,0 +1,115 @@
+{
+    "resources": [
+        {
+            "name": "../../com/cu/pa/zhrpyb001/WEB-INF/web.xml"
+        },
+        {
+            "name": "../../com/cu/pa/zhrpyb001/manifest.json"
+        },
+        {
+            "name": "../../com/cu/pa/zhrpyb001/model/errorHandling.js"
+        },
+        {
+            "name": "../../com/cu/pa/zhrpyb001/controller/utilities.js"
+        },
+        {
+            "name": "../../com/cu/pa/zhrpyb001/controller/Page1.controller.js"
+        },
+        {
+            "name": "../../com/cu/pa/zhrpyb001/controller/Formatter.js"
+        },
+        {
+            "name": "../../com/cu/pa/zhrpyb001/Component.js"
+        },
+        {
+            "name": "../../com/cu/pa/zhrpyb001/manifest-bundle.zip"
+        },
+        {
+            "name": "../../com/cu/pa/zhrpyb001/Component-preload.js",
+            "merged": true
+        },
+        {
+            "name": "../../com/cu/pa/zhrpyb001/model/models-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "../../com/cu/pa/zhrpyb001/model/errorHandling-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "../../com/cu/pa/zhrpyb001/controller/utilities-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "../../com/cu/pa/zhrpyb001/controller/Page1-dbg.controller.js",
+            "isDebug": true
+        },
+        {
+            "name": "../../com/cu/pa/zhrpyb001/controller/Formatter-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "../../com/cu/pa/zhrpyb001/Component-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "../../sap-ui-version.json"
+        },
+        {
+            "name": "neo-app.json"
+        },
+        {
+            "name": "di.code-validation.core_issues.json"
+        },
+        {
+            "name": "../../com/cu/pa/zhrpyb001/view/Fragment/Screen/Admin.fragment.xml"
+        },
+        {
+            "name": "../../com/cu/pa/zhrpyb001/view/Fragment/Dialog/Dialog9.fragment.xml"
+        },
+        {
+            "name": "../../com/cu/pa/zhrpyb001/view/Fragment/Dialog/Dialog7.fragment.xml"
+        },
+        {
+            "name": "../../com/cu/pa/zhrpyb001/view/Fragment/Dialog/Dialog5.fragment.xml"
+        },
+        {
+            "name": "../../com/cu/pa/zhrpyb001/view/Fragment/Dialog/Dialog2.fragment.xml"
+        },
+        {
+            "name": "../../com/cu/pa/zhrpyb001/view/Fragment/Dialog/Dialog1.fragment.xml"
+        },
+        {
+            "name": "../../com/cu/pa/zhrpyb001/view/Fragment/Dialog/ConfirmVisa.fragment.xml"
+        },
+        {
+            "name": "../../com/cu/pa/zhrpyb001/view/Fragment/Dialog/CerVISA.fragment.xml"
+        },
+        {
+            "name": "../../com/cu/pa/zhrpyb001/localService/zhrpyb001_SRV/metadata.xml"
+        },
+        {
+            "name": "../../com/cu/pa/zhrpyb001/view/Page1.view.xml"
+        },
+        {
+            "name": "../../com/cu/pa/zhrpyb001/localService/metadata.xml"
+        },
+        {
+            "name": "../../com/cu/pa/zhrpyb001/i18n/i18n_th.properties",
+            "raw": "i18n/i18n.properties",
+            "locale": "_th"
+        },
+        {
+            "name": "../../com/cu/pa/zhrpyb001/i18n/i18n_en.properties",
+            "raw": "i18n/i18n.properties",
+            "locale": "_en"
+        },
+        {
+            "name": "../../com/cu/pa/zhrpyb001/i18n/i18n.properties",
+            "raw": "i18n/i18n.properties"
+        },
+        {
+            "name": "../../com/cu/pa/zhrpyb001/model/models.js"
+        }
+    ]
+}

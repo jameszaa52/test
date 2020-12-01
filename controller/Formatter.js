@@ -1,0 +1,1 @@
+sap.ui.define([],function(){"use strict";return{Formater1:function(e){if(e){return this.I18N.getText("Special")}else{return this.I18N.getText("Normal")}},findIndex:function(e){return e+this.getView().getModel("mCombobox").getData().length}}});

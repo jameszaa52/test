@@ -1,0 +1,19 @@
+<core:FragmentDefinition xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:layout="sap.ui.layout"
+	xmlns:form="sap.ui.layout.form">
+	<Dialog horizontalScrolling="true" showHeader="true" state="Warning" stretch="false" title="{i18n>Dialog.Confirm}" type="Standard"
+		verticalScrolling="true" id='Dialog10' draggable="true">
+		<content>
+<Text text="{i18n>Dialog.ConfirmSalary}" class="sapUiSmallMargin" width="auto" textAlign="Begin" textDirection="Inherit" visible="true"/>
+		</content>
+		<beginButton/>
+		<buttons>
+			<Button text="{i18n>Dialog.Confirm}" type="Accept" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false"
+				press="_acceptSalary"/>
+			<Button text="{i18n>Dialog.Cancel}" type="Reject" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false"
+				press="_onCancel"/>
+		</buttons>
+		<customHeader/>
+		<endButton/>
+		<subHeader/>
+	</Dialog>
+</core:FragmentDefinition>

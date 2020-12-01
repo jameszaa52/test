@@ -1,0 +1,32 @@
+<core:FragmentDefinition xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:layout="sap.ui.layout"
+	xmlns:form="sap.ui.layout.form" draggable="true">
+	<Dialog horizontalScrolling="true" showHeader="true" state="Warning" stretch="false" title="{i18n>Dialog.Confirm}" type="Standard"
+		verticalScrolling="true" id='Dialog2'>
+		<content>
+			<FlexBox direction="Column" alignItems="Start">
+				<items>
+					<Text text="{i18n>Dialog2.Text}" class="sapUiSmallMargin" width="auto" textAlign="Begin" textDirection="Inherit" visible="true"/>
+					<RadioButtonGroup columns="1" selectedIndex="{mPrevEN>/index}" valueState="None" width="auto" editable="true" enabled="true"
+						textDirection="Inherit">
+						<buttons>
+							<RadioButton text="{i18n>Prev}" editable="true" enabled="true" visible="true" width="auto" valueState="None" selected="false"/>
+							<RadioButton text="{i18n>Download}" editable="true" enabled="true" visible="true" width="auto" valueState="None" selected="false"/>
+						</buttons>
+					</RadioButtonGroup>
+					<ObjectStatus class="sapUiSmallMargin" text="{i18n>Dialog.Outdate}" state="Error" icon="sap-icon://alert"
+						visible="{mPromote>/InPromoteMonth}"/>
+				</items>
+			</FlexBox>
+		</content>
+		<beginButton/>
+		<buttons>
+			<Button text="{i18n>Dialog.Confirm}" type="Accept" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false"
+				press="_onConfirm_EN"/>
+			<Button text="{i18n>Dialog.Cancel}" type="Reject" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false"
+				press="_onCancel"/>
+		</buttons>
+		<customHeader/>
+		<endButton/>
+		<subHeader/>
+	</Dialog>
+</core:FragmentDefinition>

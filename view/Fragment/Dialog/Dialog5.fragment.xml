@@ -1,0 +1,25 @@
+<core:FragmentDefinition xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:layout="sap.ui.layout"
+	xmlns:form="sap.ui.layout.form">
+	<Dialog horizontalScrolling="true" showHeader="true" state="None" stretch="false" title="{i18n>Dialog5.Text}" type="Standard"
+		verticalScrolling="true" id='Dialog5' draggable="true">
+		<content>
+			<RadioButtonGroup id="RBCertTH" columns="1" selectedIndex="{mformth>/index}" valueState="None" width="auto" editable="true" enabled="true"
+				textDirection="Inherit">
+				<buttons>
+					<RadioButton text="{i18n>Dialog5.Short}" editable="true" enabled="true" visible="true" width="auto" valueState="None" selected="false"/>
+					<RadioButton text="{i18n>Dialog5.Full}" editable="true" enabled="true" visible="true" width="auto" valueState="None" selected="false"/>
+				</buttons>
+			</RadioButtonGroup>
+		</content>
+		<beginButton/>
+		<buttons>
+			<Button text="{i18n>Dialog.Confirm}" type="Accept" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false"
+				press="onPressDialog5"/>
+			<Button text="{i18n>Dialog.Cancel}" type="Reject" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false"
+				press="_onCancel"/>
+		</buttons>
+		<customHeader/>
+		<endButton/>
+		<subHeader/>
+	</Dialog>
+</core:FragmentDefinition>

@@ -1,0 +1,68 @@
+<core:FragmentDefinition xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:layout="sap.ui.layout"
+	xmlns:form="sap.ui.layout.form" xmlns:app="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1">
+	<Dialog draggable="true" horizontalScrolling="true" id='Dialog8' showHeader="true" state="None" stretch="false" title="{i18n>Dialog8}"
+		type="Standard" verticalScrolling="true" class="sapUiContentPadding">
+		<content>
+			<Table width="auto" noDataText="No data" mode="None" showSeparators="All" growing="true" growingThreshold="20" growingScrollToLoad="true"
+				class="sapUiResponsiveMargin" items="{path:'m50Bis>/Period', templateShareable:true}">
+				<infoToolbar>
+					<Toolbar width="100%" height="auto" design="Auto" visible="false" enabled="true">
+						<content>
+							<Label text="Label" design="Standard" width="100%" required="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+						</content>
+					</Toolbar>
+				</infoToolbar>
+				<columns>
+					<Column width="auto" hAlign="Left" vAlign="Top" minScreenWidth="Phone" mergeDuplicates="false" demandPopin="true" popinDisplay="Block">
+						<header>
+							<Text text="{i18n>Dialog.PeriodBIS}" width="auto" maxLines="1" wrapping="true" textAlign="Begin" textDirection="Inherit" visible="true"/>
+						</header>
+						<footer/>
+					</Column>
+					<Column width="auto" hAlign="Left" vAlign="Top" minScreenWidth="Phone" mergeDuplicates="false" demandPopin="true" popinDisplay="Block">
+						<header>
+							<Text text="" width="auto" maxLines="1" wrapping="true" textAlign="Begin" textDirection="Inherit" visible="true"/>
+						</header>
+						<footer/>
+					</Column>
+					<!--<Column width="auto" hAlign="Left" vAlign="Top" minScreenWidth="Phone" mergeDuplicates="false" demandPopin="true" popinDisplay="Block">-->
+					<!--	<header>-->
+					<!--		<Text text="{i18n>Dialog.Moncom.cu.pa.zhrpyb1_backup" width="auto" maxLines="1" wrapping="true" textAlign="Begin" textDirection="Inherit" visible="true"/>-->
+					<!--	</header>-->
+					<!--	<footer/>-->
+					<!--</Column>-->
+					<!--<Column width="auto" hAlign="Left" vAlign="Top" minScreenWidth="Phone" mergeDuplicates="false" demandPopin="true" popinDisplay="Block">-->
+					<!--	<header>-->
+					<!--		<Text text="{i18n>Dialog.Paydt}" width="auto" maxLines="1" wrapping="true" textAlign="Begin" textDirection="Inherit" visible="true"/>-->
+					<!--	</header>-->
+					<!--	<footer/>-->
+					<!--</Column>-->
+				</columns>
+				<items>
+					<ColumnListItem type="Active">
+						<cells>
+							<Text text="{m50Bis>Year}" width="auto" wrapping="true" textAlign="Begin" textDirection="Inherit" visible="true"/>
+							<HBox>
+								<Button text="{i18n>th}" icon="sap-icon://pdf-attachment" iconFirst="true" press="onPressBisTH"/>
+								<Button text="{i18n>en}" icon="sap-icon://pdf-attachment" iconFirst="true" press="onPressBisEN" class="sapUiTinyMarginBeginEnd"/>
+							</HBox>
+							<!--<Text text="{path:'mList4>Gjahr'}" width="auto" wrapping="true" textAlign="Begin" textDirection="Inherit" visible="true"/>-->
+							<!--<Text text="{path:'mList4>Perio'}" width="auto" wrapping="true" textAlign="Begin" textDirection="Inherit" visible="true"/>-->
+							<!--<Text text="{path:'mList4>Paydt' , type:'sap.ui.model.type.DateTime', formatOptions: { pattern: 'dd.MM.yyyy' }}" width="auto"-->
+							<!--	wrapping="true" textAlign="Begin" textDirection="Inherit" visible="true"/>-->
+						</cells>
+					</ColumnListItem>
+				</items>
+			</Table>
+		</content>
+		<beginButton/>
+		<buttons>
+			<!--<Button text="OK" type="Default" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false" press="_onList1"/>-->
+			<Button text="{i18n>Dialog.Cancel}" type="Default" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false"
+				press="_onCancel" id='ButtonD8' app:Dname="Dialog8"/>
+		</buttons>
+		<customHeader/>
+		<endButton/>
+		<subHeader/>
+	</Dialog>
+</core:FragmentDefinition>

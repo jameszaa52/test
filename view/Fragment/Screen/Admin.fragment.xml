@@ -1,0 +1,172 @@
+<core:FragmentDefinition xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:layout="sap.ui.layout" xmlns:form="sap.ui.layout.form"
+	xmlns:core="sap.ui.core" xmlns:app="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1">
+	<layout:BlockLayoutRow scrollable="false" visible='{screenModel>/admin}'>
+		<layout:content>
+			<layout:BlockLayoutCell width="4" title="" titleAlignment="Begin" titleLevel="Auto">
+				<layout:content>
+					<form:Form width="100%" editable="true" visible="true">
+						<form:title/>
+						<form:formContainers>
+							<form:FormContainer visible="true">
+								<form:formElements>
+									<form:FormElement visible="true">
+										<form:label>
+											<Label text="{i18n>pernr}" design="Bold" width="100%" required="false" textAlign="Begin" textDirection="Inherit"/>
+										</form:label>
+										<form:fields>
+											<Input value="{mPersonalModel>/Pernr}" type="Text" enabled="true" visible="true" width="auto" showValueHelp="true" maxLength="8"
+												valueHelpRequest="_onInputValueHelpRequest" id="PernrID" change="onPernrChange"/>
+										</form:fields>
+									</form:FormElement>
+								</form:formElements>
+								<form:title/>
+							</form:FormContainer>
+							<form:FormContainer visible="true">
+								<form:formElements>
+									<form:FormElement visible="true">
+										<form:label>
+											<Label text="{i18n>name}" design="Bold" width="100%" required="false" textAlign="Begin" textDirection="Inherit"/>
+										</form:label>
+										<form:fields>
+											<Input value="{mPersonalModel>/Name}" type="Text" showValueHelp="false" enabled="true" editable="false" visible="true" width="auto"
+												valueHelpOnly="false" maxLength="0"/>
+										</form:fields>
+									</form:FormElement>
+								</form:formElements>
+								<form:title/>
+							</form:FormContainer>
+						</form:formContainers>
+						<form:layout>
+							<form:ResponsiveGridLayout adjustLabelSpan="false" columnsL="2" labelSpanL="4" columnsM="1" labelSpanM="2" labelSpanS="12"/>
+						</form:layout>
+					</form:Form>
+					<Panel height="auto" width="100%" headerText="{i18n>ibInformation}" expandable="true" expanded="false" expandAnimation="true"
+						backgroundDesign="Solid">
+						<content>
+							<form:Form width="100%" editable="true" visible="true">
+								<form:title/>
+								<form:formContainers>
+									<form:FormContainer visible="true">
+										<form:formElements>
+											<form:FormElement visible="true">
+												<form:label>
+													<Label text="{i18n>ibTypePerson}" design="Bold" width="100%" required="false" textAlign="Begin" textDirection="Inherit"/>
+												</form:label>
+												<form:fields>
+													<Input value="{mPersonalModel>/PersgText}" type="Text" showValueHelp="false" enabled="true" visible="true" width="auto"
+														valueHelpOnly="false" maxLength="0" editable="false"/>
+												</form:fields>
+											</form:FormElement>
+										</form:formElements>
+										<form:title/>
+									</form:FormContainer>
+									<form:FormContainer visible="true">
+										<form:formElements>
+											<form:FormElement visible="true">
+												<form:label>
+													<Label text="{i18n>ibPosition}" design="Bold" width="100%" required="false" textAlign="Begin" textDirection="Inherit"/>
+												</form:label>
+												<form:fields>
+													<Input value="{mPersonalModel>/PlansText}" type="Text" showValueHelp="false" enabled="true" visible="true" width="auto"
+														valueHelpOnly="false" maxLength="0" editable="false"/>
+												</form:fields>
+											</form:FormElement>
+										</form:formElements>
+										<form:title/>
+									</form:FormContainer>
+									<form:FormContainer visible="true">
+										<form:formElements>
+											<form:FormElement visible="true">
+												<form:label>
+													<Label text="{i18n>ibPositionLevel}" design="Bold" width="100%" required="false" textAlign="Begin" textDirection="Inherit"/>
+												</form:label>
+												<form:fields>
+													<Input value="{mPersonalModel>/PerskText}" type="Text" showValueHelp="false" enabled="true" visible="true" width="auto"
+														valueHelpOnly="false" maxLength="0" editable="false"/>
+												</form:fields>
+											</form:FormElement>
+										</form:formElements>
+										<form:title/>
+									</form:FormContainer>
+									<form:FormContainer visible="true">
+										<form:formElements>
+											<form:FormElement visible="true">
+												<form:label>
+													<Label text="{i18n>ibSubDepartment}" design="Bold" width="100%" required="false" textAlign="Begin" textDirection="Inherit"/>
+												</form:label>
+												<form:fields>
+													<Input value="{mPersonalModel>/OrgehText}" type="Text" showValueHelp="false" enabled="true" visible="true" width="auto"
+														valueHelpOnly="false" maxLength="0" editable="false"/>
+												</form:fields>
+											</form:FormElement>
+										</form:formElements>
+										<form:title/>
+									</form:FormContainer>
+									<form:FormContainer visible="true">
+										<form:formElements>
+											<form:FormElement visible="true">
+												<form:label>
+													<Label text="{i18n>ibDepartment}" design="Bold" width="100%" required="false" textAlign="Begin" textDirection="Inherit"/>
+												</form:label>
+												<form:fields>
+													<Input value="{mPersonalModel>/WerksText}" type="Text" showValueHelp="false" enabled="true" visible="true" width="auto"
+														valueHelpOnly="false" maxLength="0" editable="false"/>
+												</form:fields>
+											</form:FormElement>
+										</form:formElements>
+										<form:title/>
+									</form:FormContainer>
+									<form:FormContainer visible="true">
+										<form:formElements>
+											<form:FormElement visible="true">
+												<form:label>
+													<Label text="{i18n>ibTel}" design="Bold" width="100%" required="false" textAlign="Begin" textDirection="Inherit"/>
+												</form:label>
+												<form:fields>
+													<Input value="{mPersonalModel>/OfficeNo}" type="Text" showValueHelp="false" enabled="true" visible="true" width="auto" valueHelpOnly="false"
+														maxLength="0" editable="false"/>
+												</form:fields>
+											</form:FormElement>
+										</form:formElements>
+										<form:title/>
+									</form:FormContainer>
+									<form:FormContainer visible="true">
+										<form:formElements>
+											<form:FormElement visible="true">
+												<form:label>
+													<Label text="{i18n>ibEmail}" design="Bold" width="100%" required="false" textAlign="Begin" textDirection="Inherit"/>
+												</form:label>
+												<form:fields>
+													<Input value="{mPersonalModel>/CuEmail}" type="Text" showValueHelp="false" enabled="true" visible="true" width="auto" valueHelpOnly="false"
+														maxLength="0" editable="false"/>
+												</form:fields>
+											</form:FormElement>
+										</form:formElements>
+										<form:title/>
+									</form:FormContainer>
+									<form:FormContainer visible="true">
+										<form:formElements>
+											<form:FormElement visible="true">
+												<form:label>
+													<Label text="{i18n>ibMobile}" design="Bold" width="100%" required="false" textAlign="Begin" textDirection="Inherit"/>
+												</form:label>
+												<form:fields>
+													<Input value="{mPersonalModel>/MobileNo}" type="Text" showValueHelp="false" enabled="true" visible="true" width="auto" editable="false"
+														valueHelpOnly="false" maxLength="0"/>
+												</form:fields>
+											</form:FormElement>
+										</form:formElements>
+										<form:title/>
+									</form:FormContainer>
+								</form:formContainers>
+								<form:layout>
+									<form:ResponsiveGridLayout adjustLabelSpan="false" columnsL="2" labelSpanL="4" columnsM="1" labelSpanM="2" labelSpanS="12"/>
+								</form:layout>
+							</form:Form>
+						</content>
+					</Panel>
+				</layout:content>
+			</layout:BlockLayoutCell>
+		</layout:content>
+	</layout:BlockLayoutRow>
+</core:FragmentDefinition>

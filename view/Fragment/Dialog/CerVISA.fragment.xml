@@ -1,0 +1,103 @@
+<core:FragmentDefinition xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:layout="sap.ui.layout"
+	xmlns:form="sap.ui.layout.form">
+	<Dialog horizontalScrolling="true" showHeader="true" state="None" stretch="false" title="{i18n>Dialog4.Text}" type="Standard"
+		verticalScrolling="true" id='CerVISA' draggable="true">
+		<content>
+			<form:Form width="auto" editable="true" visible="true">
+				<form:title/>
+				<form:formContainers>
+					<!--<form:FormContainer visible="true" formElements="{mCombobox>/}">-->
+					<form:FormContainer visible="true">
+						<form:FormElement visible="true">
+							<form:label>
+								<Label text="{i18n>Dialog.Country}" design="Bold" width="100%" required="true" textAlign="Begin" textDirection="Inherit" visible="true"/>
+								<!--<Label text="{ path: 'i18n>Dialog.Country', formatter: '.formatter.findIndex'}" design="Bold" width="100%" required="true" textAlign="Begin"-->
+								<!--	textDirection="Inherit" visible="true"/>-->
+							</form:label>
+							<form:fields>
+								<!--<FlexBox fitContainer="false" direction="Column" alignItems="Start" height="auto" items="{mCombobox>/}">-->
+								<!--<items>-->
+								<!--<FlexBox fitContainer="false" alignItems="Start" height="auto">-->
+								<!--	<items>-->
+								<ComboBox editable="true" enabled="true" visible="true" width="auto" valueState="None" maxWidth="auto" items="{path:'mVisa>/Country'}"
+									selectedKey="{mVisa>/CountryKey}">
+									<items>
+										<core:Item text="{mVisa>CountryName}" enabled="true" key="{mVisa>CountryKey}"/>
+									</items>
+								</ComboBox>
+								<!--		<Button text="" type="Default" icon="sap-icon://delete" iconFirst="false" width="30px" enabled="true" visible="{mCombobox>Delete}"-->
+								<!--			iconDensityAware="false" press="onPressDel"/>-->
+								<!--		<Button text="" type="Default" icon="sap-icon://add" iconFirst="false" width="30px" enabled="true" visible="{mCombobox>Add}"-->
+								<!--			iconDensityAware="false" press="onPressAdd"/>-->
+								<!--	</items>-->
+								<!--</FlexBox>-->
+								<!--	</items>-->
+								<!--</FlexBox>-->
+							</form:fields>
+						</form:FormElement>
+						<!--</form:FormContainer>-->
+						<!--<form:FormContainer>-->
+						<form:formElements>
+							<form:FormElement visible="true">
+								<form:label>
+									<Label text="{i18n>Dialog.Begda}" design="Bold" width="100%" required="true" textAlign="Begin" textDirection="Inherit" visible="true"/>
+								</form:label>
+								<form:fields>
+									<DatePicker dateValue="{mVisa>/DepartureDate}" value="{mVisa>/Dep}" placeholder="DD.MM.YYYY" width="auto" displayFormat="dd.MM.yyyy"
+										enabled="true" visible="true" change="_onValidateError" id='DepDate'/>
+								</form:fields>
+							</form:FormElement>
+							<form:FormElement visible="true">
+								<form:label>
+									<Label text="{i18n>Dialog.Endda}" design="Bold" width="100%" required="true" textAlign="Begin" textDirection="Inherit" visible="true"/>
+								</form:label>
+								<form:fields>
+									<DatePicker dateValue="{mVisa>/ReturnDate}" value="{mVisa>/Ret}" placeholder="DD.MM.YYYY" width="auto" displayFormat="dd.MM.yyyy"
+										enabled="true" visible="true" change="_onValidateError" id='RetDate'/>
+								</form:fields>
+							</form:FormElement>
+							<form:FormElement visible="true">
+								<form:label>
+									<Label text="{i18n>Dialog.Return}" design="Bold" width="100%" required="true" textAlign="Begin" textDirection="Inherit" visible="true"/>
+								</form:label>
+								<form:fields>
+									<DatePicker dateValue="{mVisa>/BackToWorkDate}" value="{mVisa>/Back}" placeholder="DD.MM.YYYY" width="auto" displayFormat="dd.MM.yyyy"
+										enabled="true" visible="true" change="_onValidateError" id='BackDate'/>
+									<!--<DatePicker value="{path:'mVisa>/BackToWorkDate' , type:'sap.ui.model.type.Date' , formatOptions: { style: 'medium' , strictParsing: true}}"-->
+									<!--	placeholder="DD.MM.YYYY" width="auto" displayFormat="dd.MM.yyyy" enabled="true" visible="true"/>-->
+								</form:fields>
+							</form:FormElement>
+							<form:FormElement visible="true">
+								<form:label>
+									<Label text="{i18n>Dialog.Reason}" design="Bold" width="100%" required="true" textAlign="Begin" textDirection="Inherit" visible="true"/>
+								</form:label>
+								<form:fields>
+									<ComboBox editable="true" enabled="true" visible="true" width="auto" valueState="None" maxWidth="100%" items="{path:'mVisa>/Reason'}"
+										selectedKey="{mVisa>/ReasonKey}">
+										<items>
+											<core:Item text="{mVisa>ReasonName}" enabled="true" key="{mVisa>ReasonKey}"/>
+										</items>
+									</ComboBox>
+								</form:fields>
+							</form:FormElement>
+						</form:formElements>
+						<form:title/>
+					</form:FormContainer>
+				</form:formContainers>
+				<form:layout>
+					<form:ResponsiveGridLayout adjustLabelSpan="false" columnsL="2" labelSpanL="12" columnsM="1" labelSpanM="12" labelSpanS="12"/>
+				</form:layout>
+			</form:Form>
+		</content>
+		<beginButton/>
+		<buttons>
+			<Button text="{i18n>Dialog.Confirm}" type="Accept" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false"
+				press="_onConfirmList3"/>
+			<Button text="{i18n>Dialog.Cancel}" type="Reject" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false"
+				press="_onCancel"/>
+		</buttons>
+		<customHeader/>
+		<endButton/>
+		<subHeader/>
+	</Dialog>
+</core:FragmentDefinition>

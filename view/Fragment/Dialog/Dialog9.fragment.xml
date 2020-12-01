@@ -1,0 +1,19 @@
+<core:FragmentDefinition xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:layout="sap.ui.layout"
+	xmlns:form="sap.ui.layout.form" xmlns:app="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1">
+	<Dialog horizontalScrolling="true" id='Dialog9' showHeader="true" state="Warning" stretch="false" title="{i18n>Dialog.Confirm}"
+		type="Standard" verticalScrolling="true">
+		<content>
+			<Text text="{i18n>Dialog9.Text}" width="auto" textAlign="Begin" textDirection="Inherit" visible="true" class="sapUiSmallMargin"/>
+		</content>
+		<beginButton/>
+		<buttons>
+			<Button text="{i18n>Dialog.Confirm}" type="Accept" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false"
+				press="_acceptList4"/>
+			<Button text="{i18n>Dialog.Cancel}" type="Reject" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false"
+				press="_onCancel"/>
+		</buttons>
+		<customHeader/>
+		<endButton/>
+		<subHeader/>
+	</Dialog>
+</core:FragmentDefinition>

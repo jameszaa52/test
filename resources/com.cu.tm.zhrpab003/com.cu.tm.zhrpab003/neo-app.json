@@ -1,0 +1,52 @@
+{
+  "welcomeFile": "/index.html",
+  "routes": [
+    {
+      "path": "/resources",
+      "target": {
+        "type": "service",
+        "name": "sapui5",
+        "entryPath": "/resources",
+        "version": "1.52.9"
+      },
+      "description": "SAPUI5 Resources"
+    },
+    {
+      "path": "/test-resources",
+      "target": {
+        "type": "service",
+        "name": "sapui5",
+        "entryPath": "/test-resources",
+        "version": "1.52.9"
+      },
+      "description": "SAPUI5 Test Resources"
+    },
+    {
+      "path": "/CU_DEV",
+      "target": {
+        "type": "destination",
+        "name": "CU_DEV"
+      },
+      "description": "CU Dev"
+    },
+    {
+      "path": "/sap/opu/odata",
+      "target": {
+        "type": "destination",
+        "name": "CU_DEV",
+        "entryPath": "/sap/opu/odata"
+      },
+      "description": "CU Dev"
+    },
+    {
+      "path": "/sap/bc/ui5_ui5",
+      "target": {
+        "type": "destination",
+        "name": "CU_DEV",
+        "entryPath": "/sap/bc/ui5_ui5"
+      },
+      "description": "CU Dev"
+    }
+  ],
+  "sendWelcomeFileRedirect": true
+}
