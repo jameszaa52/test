@@ -2,7 +2,7 @@
 	"_version": "1.8.0",
 	"sap.app": {
 		"_version": "1.3.0",
-		"id": "com.cu.pa.zhrpyb1",
+		"id": "com.cu.py.zhrpyb001",
 		"type": "application",
 		"i18n": "i18n/i18n.properties",
 		"applicationVersion": {
@@ -96,7 +96,7 @@
 			"config": {
 				"routerClass": "sap.m.routing.Router",
 				"viewType": "XML",
-				"viewPath": "com.cu.pa.zhrpyb1.view",
+				"viewPath": "com.cu.py.zhrpyb001.view",
 				"controlId": "App",
 				"clearTarget": false,
 				"controlAggregation": "pages",

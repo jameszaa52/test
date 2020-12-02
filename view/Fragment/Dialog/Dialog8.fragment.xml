@@ -15,19 +15,19 @@
 				<columns>
 					<Column width="auto" hAlign="Left" vAlign="Top" minScreenWidth="Phone" mergeDuplicates="false" demandPopin="true" popinDisplay="Block">
 						<header>
-							<Text text="{i18n>Dialog.PeriodBIS}" width="auto" maxLines="1" wrapping="true" textAlign="Begin" textDirection="Inherit" visible="true"/>
+							<Text text="{i18n>Dialog.PeriodBIS}" width="auto" wrapping="true" textAlign="Begin" textDirection="Inherit" visible="true"/>
 						</header>
 						<footer/>
 					</Column>
 					<Column width="auto" hAlign="Left" vAlign="Top" minScreenWidth="Phone" mergeDuplicates="false" demandPopin="true" popinDisplay="Block">
 						<header>
-							<Text text="" width="auto" maxLines="1" wrapping="true" textAlign="Begin" textDirection="Inherit" visible="true"/>
+							<Text text="" width="auto" wrapping="true" textAlign="Begin" textDirection="Inherit" visible="true"/>
 						</header>
 						<footer/>
 					</Column>
 					<!--<Column width="auto" hAlign="Left" vAlign="Top" minScreenWidth="Phone" mergeDuplicates="false" demandPopin="true" popinDisplay="Block">-->
 					<!--	<header>-->
-					<!--		<Text text="{i18n>Dialog.Moncom.cu.pa.zhrpyb1_backup" width="auto" maxLines="1" wrapping="true" textAlign="Begin" textDirection="Inherit" visible="true"/>-->
+					<!--		<Text text="{i18n>Dialog.Moncom.cu.py.zhrpyb001_backup" width="auto" maxLines="1" wrapping="true" textAlign="Begin" textDirection="Inherit" visible="true"/>-->
 					<!--	</header>-->
 					<!--	<footer/>-->
 					<!--</Column>-->
@@ -42,9 +42,9 @@
 					<ColumnListItem type="Active">
 						<cells>
 							<Text text="{m50Bis>Year}" width="auto" wrapping="true" textAlign="Begin" textDirection="Inherit" visible="true"/>
-							<HBox>
-								<Button text="{i18n>th}" icon="sap-icon://pdf-attachment" iconFirst="true" press="onPressBisTH"/>
-								<Button text="{i18n>en}" icon="sap-icon://pdf-attachment" iconFirst="true" press="onPressBisEN" class="sapUiTinyMarginBeginEnd"/>
+							<HBox wrap="Wrap">
+								<Button text="{i18n>th}" icon="sap-icon://pdf-attachment" iconFirst="true" press="onPressBisTH" class="sapUiTinyMarginEnd"/>
+								<Button text="{i18n>en}" icon="sap-icon://pdf-attachment" iconFirst="true" press="onPressBisEN"/>
 							</HBox>
 							<!--<Text text="{path:'mList4>Gjahr'}" width="auto" wrapping="true" textAlign="Begin" textDirection="Inherit" visible="true"/>-->
 							<!--<Text text="{path:'mList4>Perio'}" width="auto" wrapping="true" textAlign="Begin" textDirection="Inherit" visible="true"/>-->

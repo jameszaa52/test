@@ -1,8 +1,8 @@
-sap.ui.define(["sap/ui/core/UIComponent", "sap/ui/Device", "com/cu/pa/zhrpyb1/model/models", "./model/errorHandling"], function (e, t, o,
+sap.ui.define(["sap/ui/core/UIComponent", "sap/ui/Device", "com/cu/py/zhrpyb001/model/models", "./model/errorHandling"], function (e, t, o,
 	i) {
 	"use strict";
 	var n = {};
-	return e.extend("com.cu.pa.zhrpyb1.Component", {
+	return e.extend("com.cu.py.zhrpyb001.Component", {
 		metadata: {
 			manifest: "json",
 			config: {

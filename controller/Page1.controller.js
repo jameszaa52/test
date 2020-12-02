@@ -2,10 +2,11 @@ sap.ui.define(["sap/ui/core/mvc/Controller", "sap/m/MessageBox", "./utilities", 
 	t, r, o, a) {
 	"use strict";
 	var s;
-	return e.extend("com.cu.pa.zhrpyb1.controller.Page1", {
+	return e.extend("com.cu.py.zhrpyb001.controller.Page1", {
 		C_MODEL_NAME: {
 			valueHelpModel: "valueHelpModel"
 		},
+
 		formatter: o,
 		handleRouteMatched: function (e) {
 			s.getView().setBusy(true);
@@ -396,7 +397,7 @@ sap.ui.define(["sap/ui/core/mvc/Controller", "sap/m/MessageBox", "./utilities", 
 			this.mDialogs = this.mDialogs || {};
 			this.oDialog = this.mDialogs[t];
 			if (this.oDialog === null || this.oDialog === undefined) {
-				this.oDialog = sap.ui.xmlfragment("com.cu.pa.zhrpyb1.view.Fragment.Dialog." + e, this);
+				this.oDialog = sap.ui.xmlfragment("com.cu.py.zhrpyb001.view.Fragment.Dialog." + e, this);
 				this.mDialogs[t] = this.oDialog;
 				this.getView().addDependent(this.mDialogs[t])
 			}
